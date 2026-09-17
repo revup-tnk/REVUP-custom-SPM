@@ -55,7 +55,6 @@ let package = Package(
                 .target(name: "MTGSDKInterstitialVideo"),
                 .target(name: "MTGSDKReward"),
                 .target(name: "MTGSDKSplash"),
-                .target(name: "MTGSDKNativeAdvanced"),
                 .target(name: "REVUPMediaMaxAdapterMoloco"),
                 .target(name: "AppLovinMediationMolocoAdapter"),
                 .target(name: "MolocoSDK"),
@@ -71,9 +70,6 @@ let package = Package(
                 .target(name: "OMSDK_Pubmatic"),
                 .target(name: "REVUPMediaMaxAdapterVungle"),
                 .target(name: "REVUPMediaMaxAdapterVungleMediationAdapter"),
-            ],
-            resources: [
-                .copy("MTGResources.bundle")
             ],
             linkerSettings: [
                 .linkedFramework("Accelerate" ),
@@ -313,11 +309,6 @@ let package = Package(
             name: "MTGSDKSplash",
             url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.5/MTGSDKSplash.xcframework.zip",
             checksum: "c6b3b4eca66746eda886f3a7cb239d382cce6ca54a9aa18cd6b5a75cae1bf286"
-        ),
-        .binaryTarget(
-            name: "MTGSDKNativeAdvanced",
-            url:"https://github.com/Mintegral-official/MintegralAdSDK-Swift-Package/releases/download/8.1.5/MTGSDKNativeAdvanced.xcframework.zip",
-            checksum: "8136df34b868246c08fbf2e0a32e2df81d274347902d2fb71b40742b80f43510"
         ),
         .binaryTarget(
             name: "REVUPMediaMaxAdapterMoloco",
